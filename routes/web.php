@@ -27,5 +27,11 @@ Route::middleware('auth')->group(function () {
     })->name('dashboard');
     
     Route::resource('projects', \App\Http\Controllers\ProjectController::class);
+    Route::resource('developers', \App\Http\Controllers\DeveloperController::class);
+    Route::resource('developers', \App\Http\Controllers\DeveloperController::class);
+    Route::resource('tasks', \App\Http\Controllers\TaskController::class);
+    Route::resource('tasks', \App\Http\Controllers\TaskController::class);
+    Route::resource('assets', \App\Http\Controllers\AssetController::class);
+    Route::resource('bugs', \App\Http\Controllers\BugController::class);
 });
 

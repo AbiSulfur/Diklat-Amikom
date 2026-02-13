@@ -45,6 +45,18 @@
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('projects.*') ? 'active' : '' }}" href="{{ route('projects.index') }}">Projects</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('developers.*') ? 'active' : '' }}" href="{{ route('developers.index') }}">Developers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('tasks.*') ? 'active' : '' }}" href="{{ route('tasks.index') }}">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('assets.*') ? 'active' : '' }}" href="{{ route('assets.index') }}">Assets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('bugs.*') ? 'active' : '' }}" href="{{ route('bugs.index') }}">Bugs</a>
+                    </li>
                 </ul>
                 <div class="d-flex text-white align-items-center">
                     <span class="me-3"><i class="bi bi-person-circle me-1"></i> {{ Auth::user()->name }}</span>
